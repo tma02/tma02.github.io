@@ -1,0 +1,24 @@
+@keyframes bob {
+  0% {
+    top: 60px;
+  }
+  50% {
+    top: 70px;
+  }
+  100% {
+    top: 60px;
+  }
+}
+
+body {
+  background-image: url(lost_background.png);
+  background-repeat: repeat;
+}
+
+.spaceman {
+  position: absolute;
+  left: 175px;
+  top: 60px;
+  animation: bob 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+  animation-iteration-count: infinite;
+}
